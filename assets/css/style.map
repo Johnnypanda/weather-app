@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../../../colt steele/basic/assets/scss/style.css",
+	"sources": [
+		"../../../colt steele/basic/assets/scss/style.scss"
+	],
+	"sourcesContent": [
+		"$background: #666;\r\n\r\n\r\nbody {\r\n  background-color: $background;\r\n}\r\n\r\nheader {\r\n  ul {\r\n    font-family: Arial;\r\n    font-size: 15px;\r\n  }\r\n}\r\n"
+	],
+	"mappings": ";AAGA,AAAA,IAAI,CAAC;EACH,gBAAgB,EAJL,IAAI;CAKhB;;;AAED,AACE,MADI,CACJ,EAAE,CAAC;EACD,WAAW,EAAE,KAAM;EACnB,SAAS,EAAE,IAAK;CACjB",
+	"names": []
+}
