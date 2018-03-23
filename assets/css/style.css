@@ -1,11 +1,22 @@
 body {
-	background-color: #99ddff;
+	background-color: #f2e3dc;
+	margin: 0;
+	font-family: 'Maven Pro', sans-serif;
+	font-size: 18px;
+}
+
+* {
+	box-sizing: border-box;
 }
 
 header {
-	background-color: white;
+	color: white;
+	text-transform: uppercase;
 	width: 100%;
 	padding: 20px 0 20px 0;
+	background: #fd746c;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #ff9068, #fd746c);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #ff9068, #fd746c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	-webkit-box-shadow:0px 1px 1px 1px rgba(0,0,0,0.25);
  	-moz-box-shadow:0px 1px 1px 1px rgba(0,0,0,0.25);
  	box-shadow:0px 1px 1px 1px rgba(0,0,0,0.25);
@@ -13,22 +24,16 @@ header {
 
 header h1{
 	text-align: center;
+	font-family: 'Alfa Slab One', cursive;
+	letter-spacing: 5px;
+	font-weight: 200;
 
 }
 
-button{
-	transition: all .3s ease;
-}
-
-button:hover {
-	cursor: pointer;
-	background-color: #99ddff;
-}
-
-	#data .container h2{
+#data .container h2{
 	font-size: 50px;
 }
-	#data .container p{
+#data .container p{
 	font-size: 30px;
 }
 
@@ -47,4 +52,30 @@ button:hover {
 
 .container {
 	padding-top: 10%;
+}
+
+#temperature {
+	padding: 0;
+	margin: 0;
+}
+
+#description {
+	padding: 0;
+	margin: 0;
+}
+
+.btn {
+	color: #fff;
+	margin-top: 20px;
+	border: none;
+	padding: 15px;
+	background-color: #f44242;
+	font-size: 18px;
+	border-radius: 2px;
+	transition: all .3s ease;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #e23636;
 }

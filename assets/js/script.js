@@ -23,7 +23,7 @@ $(document).ready(function(){
   			$('#temperature').prepend('<div><img src="http://openweathermap.org/img/w/' + icon + '.png"></div>');
   			//TOGGLE Celsius or Fahrenheit on click
 	}
-	//Convert C in F 
+	//Convert C in F
 	function displayTemp(cTemp, f){
 		////T(°F) = T(°C) × 9/5 + 32
 		if(f) return Math.round(cTemp * 9/5 + 32) + " °F";
@@ -36,12 +36,12 @@ $(document).ready(function(){
   		console.log("assigning the data...");
   		loc = d.loc.split(",");
   		//Get the weather API data (wd)
-  		$.getJSON('http://api.openweathermap.org/data/2.5/weather?units=metric&lat=' 
+  		$.getJSON('http://api.openweathermap.org/data/2.5/weather?units=metric&lat='
   			+ loc[0] +'&lon=' + loc[1] + '&APPID=' + key, function(apiData){
   			wd = apiData;
   			render(apiData, fahr);
 
-  			//Call the switch function, the tricky part is 
+  			//Call the switch function, the tricky part is
   			//that we have to change the boolean value
   			$('#switch').click(function(){
   				fahr = !fahr;
